@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import './App.css';
 import Filter from './Components/Filter';
@@ -27,14 +28,19 @@ function App() {
       activeGenre={activeGenre}
       setActiveGenre={setActiveGenre}
     />
-      <div className="popular-movies">
-        {filtered.map(movie => (
-          <Movie 
-            key={movie.id} 
-            movie = {movie}
-          />
-        ))}
-      </div>
+      <motion.div
+        layout 
+        className="popular-movies"
+      >
+        <AnimatePresence>
+          {filtered.map(movie => (
+            <Movie 
+              key={movie.id} 
+              movie = {movie}
+            />
+          ))}
+        </AnimatePresence>
+      </motion.div>
     </div>
   );
 }
