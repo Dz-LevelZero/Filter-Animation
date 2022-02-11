@@ -1,3 +1,7 @@
+# Filter-Animation
+
+![Filter-Animation](https://i.imgur.com/NhriIIX.png)
+Create a filter animation using framer-motion  on React .
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
