@@ -31,7 +31,7 @@ h2 {
 button:hover {
   transform: scale(1.05);
 }
-button:active {
+button.active {
   background: #6415FF;
   color: white;
 }
