@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Filter from './Components/Filter';
 import Movie from './Components/Movie';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+    <Filter />
       <div className="popular-movies">
         {popular.map(movie => (
           <Movie 
