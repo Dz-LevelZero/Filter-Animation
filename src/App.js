@@ -10,6 +10,7 @@ function App() {
   const [activeGenre, setActiveGenre] = useState(0);
   
   const fetchPopular = async () => {
+    // i haven't used .env file because its free api key     
     const response = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=1af8f5a0dac921ed793eaf9b1a89b23e&language=en-US&page=1");
     const movies = await response.json();
     setPopular(movies.results);
