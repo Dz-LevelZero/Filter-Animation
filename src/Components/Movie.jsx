@@ -2,8 +2,8 @@ import { motion } from "framer-motion"
 
 const Movie = ({ movie }) => {
   return (
-    <motion.div 
-      layout
+    <motion.div
+      layout="position"
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
